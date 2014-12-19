@@ -1,3 +1,11 @@
+# NOTE #
+
+This is a tool I am developing from a couple of years ago as an independent project for testing a restfull api I was developing.
+
+Well, I used and extended this tool in a couple of project, and I was so good, I decide to share and continue its develop in public and free way.
+
+This is the last state, soon I will change the name and enhance the tool and its api, and add the tool to npm.
+
 # README #
 
 flashRoutingTests is a node module loadable via npm, for http routing testing.
@@ -9,13 +17,13 @@ flashRoutingTests is a node module loadable via npm, for http routing testing.
 ### How do I get set up? ###
 
 * You can use this module how is shown in the main.js inside the sample folder ( your work folder ).
-* In your package json, you can declare the flashRoutingTest dependency as "flashRoutingTests": "git+ssh://git@bitbucket.org:batanga-arg/flashroutingtests.git#master" 
+* In your package json, you can declare the flashRoutingTest dependency as "flashRoutingTests": "git://github.com/pelicanorojo/flashroutingtests.git#master" 
 * You must provide a (tests/demoGoogleTests in this sample ) folder inside your work folder, and inside it, a batteries folder for the batteries of http calls configuration, and a config.js as a global configuration, where you specify the http root calls, some optional mocha params, etc. 
 * the test are triggered with this command line in your workfolder: node main.js -b "tests/demoGoogleTests"               ( -b means battery )
 
 The engine will load your config file and the batteries configurations inside the batteries folder.
 ### In the latest version, you may install the module globally ###
-**npm install git+ssh://git@bitbucket.org:batanga-arg/flashroutingtests.git#master -g**
+
 ( unistall with: npm uninstall flashRoutingTests -g )
 
 Note: If you have an EACCES during the installation on Linux, try this:
