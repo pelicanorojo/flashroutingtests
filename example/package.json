@@ -1,0 +1,11 @@
+{
+	"name": "flashRoutingTestsDemo",
+	"description": "Demo of flashRoutingTests use.",
+	"version": "0.0.1",
+	"private": true,
+	"dependencies": {
+		"underscore": "1.5.2",
+		"optimist": "0.6.0",
+		"chai": "1.9.1"		
+	}
+}

@@ -1,0 +1,29 @@
+{	
+	"name": "flashRoutingTests",
+	"description": "Common tool for run http request to test",
+	"version": "0.0.1",
+	"main": "./index.js",
+	"private": true,
+	"engines": ">=0.10",
+	"dependencies": {
+		"underscore": "1.5.2",
+		"commander": "2.0.0",
+		"fs-sync": "0.2.5",
+		"mocha": "1.21.3",
+		"chai": "1.9.1",
+		"superagent": "0.18.0"		
+	},
+	"bin": {
+		"frtest": "./bin/frtest.js"
+	},
+	"author": {
+		"name": "Pablo Benito",
+		"email": "bioingbenito@gmail.com",
+		"url": "https://github.com/pelicanorojo/pelicanorojo.github.io"
+	},
+	"repository" :
+	{
+		"type" : "git",
+		"url" : "https://github.com/pelicanorojo/flashroutingtests.git"
+	}
+}
