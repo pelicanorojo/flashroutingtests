@@ -1,5 +1,5 @@
 {	
-	"name": "flashRoutingTests",
+	"name": "flashroutingtests",
 	"description": "Common tool for run http request to test",
 	"version": "0.0.1",
 	"main": "./index.js",

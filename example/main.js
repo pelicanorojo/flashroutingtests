@@ -6,7 +6,7 @@ var
 	.argv,
 	configsFile,
 	configs,
-	flashRoutingTests = require( 'flashRoutingTests' );
+	flashRoutingTests = require( 'flashroutingtests' );
 
 configsFile = './tests' + ( argv.b ? '/' + argv.b : '' ) + '/configs.js'
 

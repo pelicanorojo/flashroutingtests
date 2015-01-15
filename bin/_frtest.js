@@ -11,7 +11,7 @@ var
 
 program
 	.version( '0.0.1' )
-	.usage( '[command] [options]' )
+	.usage( 'frtest [options]' )
 	.option( '-d, --destination <path>', 'Destination folder.')
 	.option( '-f, --force', 'Force files override.')
 	.option( '-m, --multibattery', 'Create a scaffold with prepeared for multi battery tests' )
@@ -71,8 +71,8 @@ program
 
 		child = exec('npm install',   function ( error, stdout, stderr ) {
 			if ( !error ) {
-				if ( !fs.existsSync( destFolder + '/node_modules/flashRoutingTests' ) ) {
-					fs.symlinkSync( __dirname + '/../', destFolder + '/node_modules/flashRoutingTests', options );
+				if ( !fs.existsSync( destFolder + '/node_modules/flashroutingtests' ) ) {
+					fs.symlinkSync( __dirname + '/../', destFolder + '/node_modules/flashroutingtests', options );
 				}				
 				
 				console.log( lastMessage.join( '\n') );				
@@ -91,7 +91,7 @@ program
 			batteryRoot = program.battery ? '/' + program.battery : '',
 			configsFile = cwd + batteryRoot + '/configs.js',
 			configs,
-			flashRoutingTests = require( 'flashRoutingTests' );
+			flashRoutingTests = require( 'flashroutingtests' );
 
 		if ( !fs.existsSync( configsFile )) { 
 			configsFile = cwd + '/tests' + batteryRoot +'/configs.js';
