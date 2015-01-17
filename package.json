@@ -1,7 +1,7 @@
 {	
 	"name": "flashroutingtests",
 	"description": "Common tool for run http request to test",
-	"version": "0.0.1",
+	"version": "0.1.0",
 	"main": "./index.js",
 	"private": true,
 	"engines": ">=0.10",

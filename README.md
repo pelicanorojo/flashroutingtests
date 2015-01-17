@@ -17,14 +17,12 @@ flashRoutingTests is a node module loadable via npm, for http routing testing.
 ### How do I get set up? ###
 
 * You can use this module how is shown in the main.js inside the sample folder ( your work folder ).
-* In your package json, you can declare the flashRoutingTest dependency as "flashRoutingTests": "git://github.com/pelicanorojo/flashroutingtests.git#master" 
+* In your package json, you can declare the flashRoutingTest dependency as "flashroutingtests": "0.1.0" 
 * You must provide a (tests/demoGoogleTests in this sample ) folder inside your work folder, and inside it, a batteries folder for the batteries of http calls configuration, and a config.js as a global configuration, where you specify the http root calls, some optional mocha params, etc. 
 * the test are triggered with this command line in your workfolder: node main.js -b "tests/demoGoogleTests"               ( -b means battery )
 
 The engine will load your config file and the batteries configurations inside the batteries folder.
 ### In the latest version, you may install the module globally ###
-
-( unistall with: npm uninstall flashRoutingTests -g )
 
 Note: If you have an EACCES during the installation on Linux, try this:
 sudo chown -R $USER /usr/local  ( Extracted from : http://stackoverflow.com/questions/15633029/npm-no-longer-working )
