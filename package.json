@@ -3,7 +3,7 @@
 	"description": "Common tool for run http request to test",
 	"version": "0.1.0",
 	"main": "./index.js",
-	"private": true,
+	"private": false,
 	"engines": ">=0.10",
 	"dependencies": {
 		"underscore": "1.5.2",
